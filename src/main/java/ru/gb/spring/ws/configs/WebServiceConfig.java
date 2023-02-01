@@ -22,9 +22,6 @@ public class WebServiceConfig extends WsConfigurerAdapter {
         servlet.setTransformWsdlLocations(true);
         return new ServletRegistrationBean(servlet, "/ws/*");
     }
-
-
-
     // http://localhost:8080/ws/products.wsdl
     @Bean(name = "products")
     public DefaultWsdl11Definition productsWsdl11Definition(XsdSchema productsSchema) {
@@ -35,8 +32,6 @@ public class WebServiceConfig extends WsConfigurerAdapter {
         wsdl11Definition.setSchema(productsSchema);
         return wsdl11Definition;
     }
-
-
     @Bean
     public XsdSchema productsSchema() {
         return new SimpleXsdSchema(new ClassPathResource("products.xsd"));

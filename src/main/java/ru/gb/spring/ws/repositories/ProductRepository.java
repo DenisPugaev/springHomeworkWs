@@ -7,6 +7,7 @@ import ru.gb.spring.ws.entities.ProductEntities;
 
 import java.util.Optional;
 
+
 @Repository
 public interface ProductRepository extends JpaRepository<ProductEntities, Long> {
     @Query("select p from ProductEntities p where p.title = ?1")
