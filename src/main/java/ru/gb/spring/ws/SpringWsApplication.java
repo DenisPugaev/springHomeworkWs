@@ -6,7 +6,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class SpringWsApplication {
 
-
     // Домашнее задание:
     // 1. Добавить  возможность выгрузки всех товаров,
     // и отдельных товаров по имени товара через SOAP

@@ -24,7 +24,6 @@ public class ProductService {
         return p;
     };
 
-
     public List<Product> getAllProducts() {
         return productRepository.findAll().stream().map(functionEntityToSoap).collect(Collectors.toList());
     }
