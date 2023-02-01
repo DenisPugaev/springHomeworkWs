@@ -19,7 +19,6 @@ public class ProductEndpoint {
     private static final String NAMESPACE_URI = "http://www.gb.ru/spring/ws/products";
     private final ProductService productService;
 
-
     /*
         Пример запроса: POST http://localhost:8080/ws
         Header -> Content-Type: text/xml
