@@ -32,7 +32,6 @@ public class ProductEndpoint {
             </soapenv:Body>
         </soapenv:Envelope>
      */
-
     @PayloadRoot(namespace = NAMESPACE_URI, localPart = "getProductByTitleRequest")
     @ResponsePayload
     public GetProductByTitleResponse getProductByTitle(@RequestPayload GetProductByTitleRequest request) {
@@ -40,7 +39,6 @@ public class ProductEndpoint {
         response.setProduct(productService.getByTitle(request.getTitle()));
         return response;
     }
-
     /*
         Пример запроса: POST http://localhost:8080/ws
         Header -> Content-Type: text/xml
@@ -52,7 +50,6 @@ public class ProductEndpoint {
             </soapenv:Body>
         </soapenv:Envelope>
      */
-
     @PayloadRoot(namespace = NAMESPACE_URI, localPart = "getAllProductsRequest")
     @ResponsePayload
     public GetAllProductsResponse getAllProducts(@RequestPayload GetAllProductsRequest request) {
