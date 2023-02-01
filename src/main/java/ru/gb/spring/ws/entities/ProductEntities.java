@@ -25,6 +25,7 @@ public class ProductEntities {
     @Column(name = "manufacturer")
     private String manufacturer;
 
+
     public ProductEntities(Long id, String title, BigDecimal price, String manufacturer) {
         this.title = title;
         this.price = price;

@@ -28,6 +28,7 @@ public class ProductService {
         return productRepository.findAll().stream().map(functionEntityToSoap).collect(Collectors.toList());
     }
 
+
     public Product getByTitle(String title) {
         return productRepository.findByTitle(title).map(functionEntityToSoap).get();
     }
